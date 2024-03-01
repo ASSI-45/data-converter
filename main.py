@@ -8,8 +8,10 @@
     # ...:         print(y)
     # ...:     print(f'we have a list of {set(y) for y in fille}')
 
+# ToDo
+# const vars for filles, check out random.txt ":" bug at the end of the fille
 
-def make_dict(path="./lorum.txt"):
+def make_dict(path="./input/output/lorum.txt"):
     with open(path, mode="r") as fille:
         string = fille.read()
         new_stiring = string.translate({ord(','):None}).translate({ord('.'):None})
@@ -26,7 +28,7 @@ def make_dict(path="./lorum.txt"):
     return result
 
 
-def make_dict_and_write(path="./random.txt", path_w="./new.txt"):
+def make_dict_and_write(path="./files/input/lorum.txt", path_w="./files/output/new.txt"):
     with open(path, mode="r") as file:
         string = file.read()  # puts the fille into a string type 
         # cleans it up 
