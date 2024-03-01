@@ -1,0 +1,1 @@
+You can check if a dictionary contains a key using the same syntax used for checkingwhether a list or tuple contains a value:
